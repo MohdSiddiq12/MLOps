@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/MLOPS/mlruns/0/bd6cc6c6d1f64f579f32714c80cc7d17/artifacts
+end_time: 1722439622192
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bd6cc6c6d1f64f579f32714c80cc7d17
+run_name: polite-ant-779
+run_uuid: bd6cc6c6d1f64f579f32714c80cc7d17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722439618814
+status: 3
+tags: []
+user_id: MohdS

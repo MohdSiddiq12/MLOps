@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/MLOPS/mlruns/0/a03ad741fbe94de1bd672f9a7e520e32/artifacts
+end_time: 1722440118044
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a03ad741fbe94de1bd672f9a7e520e32
+run_name: abrasive-hare-238
+run_uuid: a03ad741fbe94de1bd672f9a7e520e32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722440111569
+status: 4
+tags: []
+user_id: MohdS

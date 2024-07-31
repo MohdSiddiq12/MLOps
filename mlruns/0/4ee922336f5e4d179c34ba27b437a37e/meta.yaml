@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/MLOPS/mlruns/0/4ee922336f5e4d179c34ba27b437a37e/artifacts
+end_time: 1722439916638
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ee922336f5e4d179c34ba27b437a37e
+run_name: lyrical-perch-216
+run_uuid: 4ee922336f5e4d179c34ba27b437a37e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722439910303
+status: 4
+tags: []
+user_id: MohdS

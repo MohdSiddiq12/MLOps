@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/MLOPS/mlruns/0/6f44809208434041b6f6dc775b618876/artifacts
+end_time: 1722439892885
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6f44809208434041b6f6dc775b618876
+run_name: skittish-toad-752
+run_uuid: 6f44809208434041b6f6dc775b618876
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722439886850
+status: 4
+tags: []
+user_id: MohdS
