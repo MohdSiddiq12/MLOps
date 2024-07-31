@@ -6,8 +6,8 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 
 # Load data
-data = pd.read_csv('data/raw/california_housing.csv')
-X = data.drop('median_house_value', axis=1)
+data = pd.read_csv('data/raw/housing.csv')
+X = data.drop('median_house_value','ocean_proximity', axis=1)
 y = data['median_house_value']
 
 # Split data
