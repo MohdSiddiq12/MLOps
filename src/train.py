@@ -34,6 +34,7 @@ with mlflow.start_run():
     # Log metrics
     mse = mean_squared_error(y_test, y_pred)
     mlflow.log_metric("mse", mse)
+    #add more model metrics like mae,r2 etc
 
     # Log model
     mlflow.sklearn.log_model(model, "random_forest_model")
