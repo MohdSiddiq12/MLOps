@@ -1,11 +1,15 @@
-from flask import Flask, request, jsonify
-import mlflow.sklearn
+from flask import Flask, request, jsonify, render_template
 import pandas as pd
+import joblib
 
 app = Flask(__name__)
 
 # Load the model
-model = mlflow.sklearn.load_model('path_to_your_model')
+model = joblib.load('models/RandomForest.pkl')
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
