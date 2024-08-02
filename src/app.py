@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the model
-model_path = ('models\RandomForest.pkl')
+model_path = os.path.join('models', 'RandomForest.pkl')
 model = joblib.load(model_path)
 
 @app.route('/')
@@ -36,13 +36,17 @@ def predict():
             prediction = model.predict(df)
 
             # Return prediction
-            return jsonify({"prediction": prediction[0]})
+            return jsonify({"prediction": float(prediction[0])})
 
         except Exception as e:
             return jsonify({"error": str(e)}), 400
 
     # If it's a GET request, render the prediction form
     return render_template('predict.html')
+
+@app.route('/health')
+def health():
+    return jsonify({"status": "healthy"}), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
