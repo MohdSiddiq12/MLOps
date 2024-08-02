@@ -4,10 +4,11 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
+import joblib
 
 # Load data
 data = pd.read_csv('data/raw/housing.csv')
-X = data.drop('median_house_value','ocean_proximity', axis=1)
+X = data.drop(['median_house_value','ocean_proximity'], axis=1)
 y = data['median_house_value']
 
 # Split data
@@ -42,3 +43,6 @@ with mlflow.start_run():
     print(f"Logged model with MSE: {mse}")
 
 print("Training complete.")
+
+ # Save model to file 
+joblib.dump(model, 'RandomForest.pkl')
