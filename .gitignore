@@ -1,0 +1,16 @@
+mlops_env
+/housing.csv
+models
+.dvc/
+.dvcignore
+.github/
+.gitignore
+README.md
+colab-notebooks/
+data/
+dockerfile
+housing.csv.dvc
+mlruns/
+notebooks/
+requirements.txt
+src/
