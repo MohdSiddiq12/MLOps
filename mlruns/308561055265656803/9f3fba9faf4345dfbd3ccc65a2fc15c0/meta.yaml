@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPS/mlruns/308561055265656803/9f3fba9faf4345dfbd3ccc65a2fc15c0/artifacts
+end_time: 1722862734310
+entry_point_name: ''
+experiment_id: '308561055265656803'
+lifecycle_stage: active
+run_id: 9f3fba9faf4345dfbd3ccc65a2fc15c0
+run_name: loud-mink-978
+run_uuid: 9f3fba9faf4345dfbd3ccc65a2fc15c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722862697627
+status: 3
+tags: []
+user_id: MohdS

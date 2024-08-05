@@ -1,0 +1,6 @@
+artifact_location: file:///D:/MLOPS/mlruns/308561055265656803
+creation_time: 1722862694784
+experiment_id: '308561055265656803'
+last_update_time: 1722862694784
+lifecycle_stage: active
+name: Housing prices using RandomForest

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPS/mlruns/202806185543764461/c2e4797ddb3b4eaca71e6f02c179fed8/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '202806185543764461'
+lifecycle_stage: active
+run_id: c2e4797ddb3b4eaca71e6f02c179fed8
+run_name: resilient-moth-44
+run_uuid: c2e4797ddb3b4eaca71e6f02c179fed8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722862601552
+status: 1
+tags: []
+user_id: MohdS

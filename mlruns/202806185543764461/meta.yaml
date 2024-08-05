@@ -1,0 +1,6 @@
+artifact_location: file:///D:/MLOPS/mlruns/202806185543764461
+creation_time: 1722862594662
+experiment_id: '202806185543764461'
+last_update_time: 1722862594662
+lifecycle_stage: active
+name: california housing prices using random forest

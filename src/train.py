@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
+from mlflow.models import infer_signature
 import joblib
-
 # Load data
 data = pd.read_csv('data/raw/housing.csv')
 X = data.drop(['median_house_value','ocean_proximity'], axis=1)
@@ -14,6 +14,14 @@ y = data['median_house_value']
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Set the experiment name
+experiment_name = "Housing prices using RandomForest"
+
+# Create a new experiment
+mlflow.create_experiment(experiment_name)
+
+# Set the new experiment as the active one
+mlflow.set_experiment(experiment_name)
 # Start an MLflow run
 with mlflow.start_run():
     # Set model parameters
@@ -36,7 +44,7 @@ with mlflow.start_run():
     mse = mean_squared_error(y_test, y_pred)
     mlflow.log_metric("mse", mse)
     #add more model metrics like mae,r2 etc
-
+    signature = infer_signature(X_test,model.predict(X_test))
     # Log model
     mlflow.sklearn.log_model(model, "random_forest_model")
 
