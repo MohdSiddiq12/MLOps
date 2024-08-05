@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPS/mlruns/770717435102198229/41e0b6f2b66442459bc83ef68a0f3492/artifacts
+end_time: 1722863622476
+entry_point_name: ''
+experiment_id: '770717435102198229'
+lifecycle_stage: active
+run_id: 41e0b6f2b66442459bc83ef68a0f3492
+run_name: worried-lark-378
+run_uuid: 41e0b6f2b66442459bc83ef68a0f3492
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722863601357
+status: 4
+tags: []
+user_id: MohdS

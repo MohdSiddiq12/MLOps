@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPS/mlruns/279034505741451599/6cae5b3406704671a4f184c354e0b84f/artifacts
+end_time: 1722864222897
+entry_point_name: ''
+experiment_id: '279034505741451599'
+lifecycle_stage: active
+run_id: 6cae5b3406704671a4f184c354e0b84f
+run_name: illustrious-cod-755
+run_uuid: 6cae5b3406704671a4f184c354e0b84f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722864200662
+status: 3
+tags: []
+user_id: MohdS

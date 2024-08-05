@@ -2,7 +2,7 @@ import mlflow
 import mlflow.sklearn
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.model_selection import train_test_split
 from mlflow.models import infer_signature
 import joblib
@@ -15,7 +15,7 @@ y = data['median_house_value']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Set the experiment name
-experiment_name = "Housing prices using RandomForest"
+experiment_name = "version 1.3"
 
 # Create a new experiment
 mlflow.create_experiment(experiment_name)
@@ -42,15 +42,42 @@ with mlflow.start_run():
 
     # Log metrics
     mse = mean_squared_error(y_test, y_pred)
+    mae = mean_absolute_error(y_test, y_pred)
+    r2 = r2_score(y_test, y_pred)
+    
     mlflow.log_metric("mse", mse)
+    mlflow.log_metric("mae", mae)
+    mlflow.log_metric("r2", r2)
     #add more model metrics like mae,r2 etc
     signature = infer_signature(X_test,model.predict(X_test))
     # Log model
-    mlflow.sklearn.log_model(model, "random_forest_model")
+    mlflow.sklearn.log_model(model, "random_forest_model", signature=signature)
 
-    print(f"Logged model with MSE: {mse}")
+       # Register the model
+    # Register the model with version 1.1, tags, and aliases
+    register = mlflow.register_model(
+        "runs:/9f3fba9faf4345dfbd3ccc65a2fc15c0/random_forest_model",
+        "RandomForestModel",
+        tags={"registering-model": "true", "model-type": "regressor"}
+    )
+
+    # Add aliases to the registered model
+    client = mlflow.tracking.MlflowClient()
+    client.update_model_version(
+        name="RandomForestModel",
+        version=register.version,
+        description="Model version 1.1"
+    )
+    client.add_model_version_tag(
+        name="RandomForestModel",
+        version=register.version,
+        tag="alias", value="production"
+    )
+    
+
+    print(f"Logged model with MSE: {mse}, MAE: {mae}, R2: {r2}")
 
 print("Training complete.")
 
- # Save model to file 
-joblib.dump(model, 'RandomForest.pkl')
+#  # Save model to file 
+# joblib.dump(model, 'RandomForest.pkl')

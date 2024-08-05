@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPS/mlruns/893635841080124220/856d26290d884c5196a30d258f3d378f/artifacts
+end_time: 1722866041863
+entry_point_name: ''
+experiment_id: '893635841080124220'
+lifecycle_stage: active
+run_id: 856d26290d884c5196a30d258f3d378f
+run_name: painted-dog-698
+run_uuid: 856d26290d884c5196a30d258f3d378f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722866016589
+status: 4
+tags: []
+user_id: MohdS

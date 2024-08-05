@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPS/mlruns/990248549689899572/e00ce465e2364c0badfd73cd2e3435cf/artifacts
+end_time: 1722866225313
+entry_point_name: ''
+experiment_id: '990248549689899572'
+lifecycle_stage: active
+run_id: e00ce465e2364c0badfd73cd2e3435cf
+run_name: capable-mare-459
+run_uuid: e00ce465e2364c0badfd73cd2e3435cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722866207102
+status: 4
+tags: []
+user_id: MohdS

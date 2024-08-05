@@ -1,0 +1,29 @@
+artifact_path: random_forest_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.0
+mlflow_version: 2.14.1
+model_size_bytes: 10210332
+model_uuid: 963cec902c954a3f8c03c0f9852d3c6e
+run_id: 5b129bd1c37e4ad799da4cfc990ce146
+signature:
+  inputs: '[{"type": "double", "name": "longitude", "required": true}, {"type": "double",
+    "name": "latitude", "required": true}, {"type": "double", "name": "housing_median_age",
+    "required": true}, {"type": "double", "name": "total_rooms", "required": true},
+    {"type": "double", "name": "total_bedrooms", "required": false}, {"type": "double",
+    "name": "population", "required": true}, {"type": "double", "name": "households",
+    "required": true}, {"type": "double", "name": "median_income", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-08-05 13:49:30.656103'
