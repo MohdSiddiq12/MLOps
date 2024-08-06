@@ -1,3 +1,5 @@
 mlops
 /housing.csv
 models
+mlruns
+check.py
